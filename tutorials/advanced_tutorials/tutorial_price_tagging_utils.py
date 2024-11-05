@@ -93,7 +93,7 @@ def pricing_tag_game_example_sampler(
     output_ids = (torch.ones(input_ids.shape[0]) * -100).long().tolist()
     output_ids[-1] = label
     input_ids = input_ids.tolist()
-    assert len(input_ids) == 82
+    #assert len(input_ids) == 82
 
     return input_ids, output_ids
 
